@@ -11,13 +11,13 @@
 <meta name="description" content="명동 중심의 관리 공간, 난다타이아로마 마사지 명동점입니다. 타이 전신관리부터 아로마 오일 테라피, 페이셜·아쿠아필링 케어까지. 을지로입구역 6번 출구 약 410m, 매일 10시~22시 운영. 외국인 응대 가능. 오늘 가능한 관리 시간을 먼저 확인해 보세요." />
 <meta name="keywords" content="난다타이아로마 마사지 명동점, 명동 마사지, 명동 타이마사지, 명동 아로마 마사지, 명동 피부관리, 명동 페이셜케어, 명동 아쿠아필링, 명동 외국인 마사지, Myeongdong massage, Myeongdong facial spa, Thai massage in Myeongdong" />
 
-<link rel="canonical" href="https://nanda-myeongdong.netlify.app/" />
+<link rel="canonical" href="https://nandaaroma-myeongdong.netlify.app/" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="난다타이아로마 마사지 명동점 | 명동 타이마사지·아로마·페이셜 스파" />
 <meta property="og:description" content="명동 중심에서 타이마사지·아로마 오일 테라피·페이셜·아쿠아필링까지. 여행자와 직장인 모두 편하게 받을 수 있는 관리 공간. 외국인 응대 가능." />
-<meta property="og:url" content="https://nanda-myeongdong.netlify.app/" />
-<meta property="og:image" content="https://nanda-myeongdong.netlify.app/og/nanda-myeongdong-thai-massage-og.jpg" />
+<meta property="og:url" content="https://nandaaroma-myeongdong.netlify.app/" />
+<meta property="og:image" content="https://nandaaroma-myeongdong.netlify.app/og/nanda-myeongdong-thai-massage-og.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:site_name" content="난다타이아로마 마사지 명동점" />
@@ -27,7 +27,7 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="난다타이아로마 마사지 명동점 | 명동 타이마사지·아로마·페이셜 스파" />
 <meta name="twitter:description" content="명동 중심에서 타이마사지·아로마·페이셜·아쿠아필링까지. 외국인 응대 가능." />
-<meta name="twitter:image" content="https://nanda-myeongdong.netlify.app/og/nanda-myeongdong-thai-massage-og.jpg" />
+<meta name="twitter:image" content="https://nandaaroma-myeongdong.netlify.app/og/nanda-myeongdong-thai-massage-og.jpg" />
 
 <meta name="last-modified" content="2026-05-27" />
 <meta name="theme-color" content="#F6EFE3" />
@@ -56,10 +56,11 @@
   --sage-soft:   #A9B69B;
   --gold:        #B8924A;
   --gold-soft:   #C9A45C;
+  --gold-ink:    #8F6E32;
   --deep:        #2C2A22;
   --deep-soft:   #3A372D;
   --ink:         #3A352C;
-  --ink-mute:    #6E665A;
+  --ink-mute:    #5F584C;
   --ink-faint:   rgba(58, 53, 44, 0.55);
 
   /* Font */
@@ -111,13 +112,14 @@ details summary::-webkit-details-marker { display: none; }
 body {
   font-family: var(--font-sans);
   font-weight: 500;
-  font-size: 15px;
-  line-height: 1.65;
-  letter-spacing: -0.015em;
+  font-size: 15.5px;
+  line-height: 1.72;
+  letter-spacing: -0.012em;
   color: var(--ink);
   background: var(--cream);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   word-break: keep-all;
   overflow-wrap: break-word;
 }
@@ -144,6 +146,7 @@ h1, h2, h3, .h-head {
   word-spacing: 0.02em;
   word-break: keep-all;
   overflow-wrap: break-word;
+  text-wrap: balance;
 }
 h1 { font-size: 31px; line-height: 1.4; }
 h2 { font-size: 25px; line-height: 1.42; }
@@ -158,7 +161,7 @@ h3 { font-size: 18px; line-height: 1.5; }
   h1 { font-size: 52px; line-height: 1.3; }
   h2 { font-size: 38px; line-height: 1.34; }
 }
-p { line-height: 1.72; }
+p { line-height: 1.74; text-wrap: pretty; }
 
 .eyebrow {
   display: inline-flex;
@@ -169,7 +172,7 @@ p { line-height: 1.72; }
   font-weight: 600;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-ink);
 }
 .eyebrow::before {
   content: "";
@@ -183,7 +186,7 @@ p { line-height: 1.72; }
   font-family: var(--font-head);
   font-weight: 500;
   font-size: 13px;
-  color: var(--gold);
+  color: var(--gold-ink);
   letter-spacing: 0.06em;
   font-variant-numeric: tabular-nums;
 }
@@ -256,6 +259,7 @@ p { line-height: 1.72; }
 .section--sage  { background: #EEF0E7; }
 .section--deep  { background: var(--deep); color: var(--cream); }
 
+[id] { scroll-margin-top: 74px; }
 .section-line { height: 1px; background: linear-gradient(90deg, transparent, rgba(138, 154, 123, 0.3), transparent); }
 
 .sec-head { max-width: 600px; margin-bottom: 44px; }
@@ -325,7 +329,7 @@ p { line-height: 1.72; }
 .hero__eyebrow { margin-bottom: 22px; opacity: 0; transform: translateY(12px); }
 .hero__title { color: var(--cream); margin-bottom: 22px; max-width: 760px; text-shadow: 0 2px 14px rgba(18, 14, 9, 0.45); opacity: 0; transform: translateY(16px); }
 .hero__sub-1 { color: var(--cream); font-size: 15px; line-height: 1.78; max-width: 540px; margin-bottom: 6px; opacity: 0; transform: translateY(14px); text-shadow: 0 1px 10px rgba(18, 14, 9, 0.55); }
-.hero__sub-2 { color: var(--cream); font-size: 14px; line-height: 1.78; max-width: 540px; margin-bottom: 36px; opacity: 0; transform: translateY(14px); text-shadow: 0 1px 10px rgba(18, 14, 9, 0.55); }
+.hero__sub-2 { color: var(--cream); font-size: 14px; line-height: 1.8; max-width: 540px; margin-bottom: 36px; opacity: 0; transform: translateY(14px); text-shadow: 0 1px 10px rgba(18, 14, 9, 0.55); }
 @media (min-width: 768px) { .hero__sub-1 { font-size: 17px; } .hero__sub-2 { font-size: 15px; } }
 
 .hero__ctas { display: flex; flex-direction: column; align-items: stretch; gap: 16px; opacity: 0; transform: translateY(14px); }
@@ -352,7 +356,7 @@ p { line-height: 1.72; }
   padding: 18px 0; border-bottom: 1px solid var(--beige-line); align-items: center;
 }
 @media (min-width: 768px) { .qt__row { grid-template-columns: 64px 190px 1fr; column-gap: 24px; padding: 20px 0; } }
-.qt__serial { font-family: var(--font-head); font-size: 16px; color: var(--gold); font-variant-numeric: tabular-nums; letter-spacing: 0.06em; }
+.qt__serial { font-family: var(--font-head); font-size: 16px; color: var(--gold-ink); font-variant-numeric: tabular-nums; letter-spacing: 0.06em; }
 .qt__label { display: flex; align-items: center; gap: 9px; color: var(--sage-deep); font-size: 11px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; }
 .qt__main { font-weight: 600; color: var(--ink); font-size: 15px; }
 .qt__main small { font-weight: 500; color: var(--ink-mute); font-size: 13px; }
@@ -385,9 +389,9 @@ p { line-height: 1.72; }
 }
 .care-item:hover { border-color: rgba(138, 154, 123, 0.4); box-shadow: var(--shadow-sm); }
 .care-item__name { font-weight: 600; color: var(--ink); font-size: 15px; }
-.care-item__price { font-family: var(--font-head); font-size: 16px; color: var(--gold); white-space: nowrap; }
+.care-item__price { font-family: var(--font-head); font-size: 16px; color: var(--gold-ink); white-space: nowrap; }
 .care-item__time { grid-column: 1; color: var(--ink-mute); font-size: 12.5px; }
-.care-item__tag { grid-column: 1 / -1; margin-top: 4px; font-size: 12px; color: var(--sage-deep); }
+.care-item__tag { grid-column: 1 / -1; margin-top: 4px; font-size: 12.5px; color: var(--sage-deep); }
 
 .badge {
   display: inline-block; padding: 4px 10px; border-radius: var(--r-full);
@@ -409,9 +413,9 @@ p { line-height: 1.72; }
   display: flex; justify-content: space-between; align-items: baseline; gap: 16px;
   padding: 14px 0; border-bottom: 1px solid var(--beige-line);
 }
-.price__name { color: var(--ink); font-size: 14.5px; }
+.price__name { color: var(--ink); font-size: 15px; }
 .price__name small { color: var(--ink-mute); font-size: 12.5px; }
-.price__val { font-family: var(--font-head); font-size: 16px; color: var(--gold); white-space: nowrap; }
+.price__val { font-family: var(--font-head); font-size: 16.5px; color: var(--gold-ink); white-space: nowrap; }
 .price__note { font-size: 12.5px; color: var(--ink-faint); margin-top: 22px; line-height: 1.65; }
 
 /* ============================================================
@@ -420,7 +424,7 @@ p { line-height: 1.72; }
 .steps { display: grid; grid-template-columns: 1fr; gap: 14px; margin-bottom: 28px; }
 @media (min-width: 640px) { .steps { grid-template-columns: 1fr 1fr; } }
 .step { display: flex; gap: 14px; align-items: flex-start; background: var(--paper); border: 1px solid var(--beige-line); border-radius: var(--r-md); padding: 18px; }
-.step__no { font-family: var(--font-head); font-size: 18px; color: var(--gold); flex-shrink: 0; line-height: 1.2; }
+.step__no { font-family: var(--font-head); font-size: 19px; color: var(--gold-ink); flex-shrink: 0; line-height: 1.2; }
 .step__t { font-weight: 600; color: var(--ink); margin-bottom: 4px; font-size: 14.5px; }
 .step__d { font-size: 13px; color: var(--ink-mute); line-height: 1.65; }
 .reassure { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
@@ -470,14 +474,14 @@ p { line-height: 1.72; }
 .faq__item { border-bottom: 1px solid var(--beige-line); }
 .faq__q {
   display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;
-  padding: 22px 0; font-family: var(--font-head); font-weight: 700; font-size: 16px; color: var(--ink); line-height: 1.5;
+  padding: 22px 0; font-family: var(--font-head); font-weight: 700; font-size: 16.5px; color: var(--ink); line-height: 1.5;
 }
 .faq__q .ic { flex-shrink: 0; width: 20px; height: 20px; position: relative; margin-top: 3px; }
-.faq__q .ic::before, .faq__q .ic::after { content: ""; position: absolute; background: var(--gold); transition: transform var(--t-mid) var(--ease); }
+.faq__q .ic::before, .faq__q .ic::after { content: ""; position: absolute; background: var(--gold-ink); transition: transform var(--t-mid) var(--ease); }
 .faq__q .ic::before { top: 9px; left: 2px; right: 2px; height: 1.5px; }
 .faq__q .ic::after { left: 9px; top: 2px; bottom: 2px; width: 1.5px; }
 .faq__item[open] .faq__q .ic::after { transform: scaleY(0); }
-.faq__a { padding: 0 36px 24px 0; color: var(--ink-mute); font-size: 14px; line-height: 1.78; }
+.faq__a { padding: 0 36px 24px 0; color: var(--ink-mute); font-size: 14.5px; line-height: 1.82; }
 
 /* ============================================================
    MOOD DIVIDER
@@ -934,8 +938,8 @@ p { line-height: 1.72; }
     </div>
 
     <p class="footer__disclaimer">
-      ※ 본 페이지는 초안이며, 현재 사용된 이미지는 실제 매장을 촬영한 사진이 아니라 분위기 참고용 무드 이미지입니다.
-      실제 시설·관리실 사진은 추후 교체될 예정이며, 관리 구성·가격·운영 시간은 변동될 수 있으니 방문 전 예약 화면에서 확인해 주세요.
+      ※ 본 페이지는 초안입니다. 공유 썸네일에는 실제 매장 시술 사진을 사용했으며, 본문의 일부 이미지는 분위기 참고용 무드 이미지로 실제 시설 사진으로 순차 교체될 예정입니다.
+      관리 구성·가격·운영 시간은 변동될 수 있으니, 방문 전 예약 화면에서 확인해 주세요.
     </p>
   </div>
 </footer>
@@ -950,11 +954,11 @@ p { line-height: 1.72; }
   "name": "난다타이아로마 마사지 명동점",
   "alternateName": "Nanda Aroma Thai Massage & Facial Spa — Myeongdong",
   "description": "명동 중심의 관리 공간. 타이 전신관리, 아로마 오일 테라피, 페이셜·아쿠아필링 케어를 받을 수 있으며 외국인 응대가 가능합니다.",
-  "url": "https://nanda-myeongdong.netlify.app/",
+  "url": "https://nandaaroma-myeongdong.netlify.app/",
   "image": [
-    "https://nanda-myeongdong.netlify.app/img/nanda-myeongdong-thai-massage-spa-hero.jpg",
-    "https://nanda-myeongdong.netlify.app/img/myeongdong-thai-aroma-treatment-room.jpg",
-    "https://nanda-myeongdong.netlify.app/img/myeongdong-facial-aqua-peeling-care.jpg"
+    "https://nandaaroma-myeongdong.netlify.app/img/nanda-myeongdong-thai-massage-spa-hero.jpg",
+    "https://nandaaroma-myeongdong.netlify.app/img/myeongdong-thai-aroma-treatment-room.jpg",
+    "https://nandaaroma-myeongdong.netlify.app/img/myeongdong-facial-aqua-peeling-care.jpg"
   ],
   "address": {
     "@type": "PostalAddress",
